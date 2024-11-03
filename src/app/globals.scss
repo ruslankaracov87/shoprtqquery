@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+}
+button {
+  cursor: pointer;
+}
+
+textarea {
+  outline: none;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+ 
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding-inline: 40px;
+}
+
+@media (max-width: 431px) {
+  .container {
+    padding-inline: 20px;
+  }
+}
+
+#__next-build-watcher {
+  display: none !important;
+}

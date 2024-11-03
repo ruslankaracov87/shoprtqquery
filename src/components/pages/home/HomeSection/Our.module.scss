@@ -1,0 +1,126 @@
+.our {
+  padding-top: 50px;
+  .content {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 40px;
+    .mainText {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      .bg {
+        width: 20px;
+        height: 40px;
+        background: red;
+        border-radius: 5px;
+      }
+      h3 {
+        color: red;
+      }
+    }
+    h1 {
+      font-size: 30px;
+    }
+    .ourProducts {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .button {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      button {
+        width: 150px;
+        height: 40px;
+        background: red;
+        border: none;
+        border-radius: 5px;
+        color: white;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .our {
+    .content {
+      .ourProducts {
+      }
+    }
+  }
+}
+@media (max-width: 920px) {
+  .our {
+    .content {
+      .ourProducts {
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .our {
+    .content {
+      .ourProducts {
+        justify-content: center;
+        gap: 40px;
+      }
+    }
+  }
+}
+@media (max-width: 431px) {
+  .our {
+    .content {
+      gap: 20px;
+      .mainText {
+        .bg {
+          width: 15px;
+          height: 30px;
+        }
+        h3 {
+          font-size: 15px;
+        }
+      }
+      h1 {
+        font-size: 20px;
+      }
+      .ourProducts {
+        justify-content: center;
+        gap: 20px;
+      }
+    }
+  }
+}
+@media (max-width: 361px) {
+  .our {
+    .content {
+      gap: 10px;
+      .mainText {
+        .bg {
+          width: 15px;
+          height: 30px;
+        }
+        h3 {
+          font-size: 12px;
+        }
+      }
+      h1 {
+        font-size: 20px;
+      }
+      .ourProducts {
+        justify-content: center;
+        gap: 20px;
+      }
+      .button {
+        button {
+          width: 100px;
+          height: 30px;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}

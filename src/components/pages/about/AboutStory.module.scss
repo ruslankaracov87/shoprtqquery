@@ -1,0 +1,270 @@
+.story {
+  padding-bottom: 50px;
+  .content {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 40px;
+    .main {
+      margin-top: 20px;
+      h5 {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        color: gray;
+        font-weight: 500;
+        span {
+          color: black;
+        }
+      }
+    }
+    .storyOur {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+      .text {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        gap: 10px;
+        width: 50%;
+        h1 {
+          font-size: 40px;
+          font-weight: 600;
+          margin-bottom: 20px;
+        }
+        p {
+          font-size: 12px;
+          line-height: 20px;
+          width: 80%;
+        }
+      }
+      img {
+        width: 50%;
+        height: 50%;
+        object-fit: cover;
+      }
+    }
+    .storyBlocks {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      .block {
+        width: 23%;
+        height: 200px;
+        border: 1px solid gray;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        cursor: pointer;
+        &:hover {
+          background: red;
+          border: none;
+          color: white;
+          .icon {
+            a {
+              background: white;
+              color: black;
+            }
+          }
+        }
+        .icon {
+          width: 60px;
+          height: 60px;
+          background: rgba(128, 128, 128, 0.343);
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          a {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+          }
+        }
+        h3 {
+          font-size: 20px;
+        }
+        h6 {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+}
+@media (max-width: 920px) {
+  .story {
+    .content {
+      .storyOur {
+        .text {
+          h1 {
+            font-size: 30px;
+            margin-bottom: 15px;
+          }
+        }
+      }
+      .storyBlocks {
+        .block {
+          height: 180px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .story {
+    .content {
+      .main {
+        h5 {
+          font-size: 12px;
+        }
+      }
+      .storyOur {
+        .text {
+          h1 {
+            font-size: 25px;
+            margin-bottom: 0px;
+          }
+          p {
+            font-size: 10px;
+            line-height: 17px;
+          }
+        }
+      }
+      .storyBlocks {
+        .block {
+          height: 150px;
+          .icon {
+            width: 50px;
+            height: 50px;
+            a {
+              width: 35px;
+              height: 35px;
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 431px) {
+  .story {
+    .content {
+      .main {
+        h5 {
+          font-size: 10px;
+        }
+      }
+      .storyOur {
+        flex-direction: column;
+        gap: 20px;
+        .text {
+          width: 100%;
+          h1 {
+            font-size: 20px;
+            margin-bottom: 0px;
+          }
+          p {
+            font-size: 10px;
+            line-height: 17px;
+          }
+        }
+        img {
+          width: 100%;
+          height: 200px;
+        }
+      }
+      .storyBlocks {
+        .block {
+          height: 100px;
+          gap: 5px;
+          .icon {
+            width: 35px;
+            height: 35px;
+            a {
+              width: 23px;
+              height: 23px;
+              font-size: 12px;
+            }
+          }
+          h3 {
+            font-size: 15px;
+          }
+          h6 {
+            font-size: 8px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 361px) {
+  .story {
+    .content {
+      .main {
+        h5 {
+          font-size: 10px;
+        }
+      }
+      .storyOur {
+        flex-direction: column;
+        gap: 20px;
+        .text {
+          width: 100%;
+          h1 {
+            font-size: 20px;
+            margin-bottom: 0px;
+          }
+          p {
+            font-size: 10px;
+            line-height: 17px;
+          }
+        }
+        img {
+          width: 100%;
+          height: 200px;
+        }
+      }
+      .storyBlocks {
+        flex-wrap: wrap;
+        gap: 10px;
+        .block {
+          width: 47%;
+          height: 100px;
+          gap: 5px;
+          .icon {
+            width: 35px;
+            height: 35px;
+            a {
+              width: 23px;
+              height: 23px;
+              font-size: 12px;
+            }
+          }
+          h3 {
+            font-size: 15px;
+          }
+          h6 {
+            font-size: 8px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

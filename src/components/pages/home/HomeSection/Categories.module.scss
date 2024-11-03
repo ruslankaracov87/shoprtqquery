@@ -1,0 +1,170 @@
+.categories {
+  padding-top: 50px;
+  .content {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 40px;
+    .mainText {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      .bg {
+        width: 20px;
+        height: 40px;
+        background: red;
+        border-radius: 5px;
+      }
+      h3 {
+        color: red;
+      }
+    }
+    h1 {
+      font-size: 30px;
+    }
+    .categoryBlocks {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      .block {
+        width: 170px;
+        height: 150px;
+        border: 1px solid gray;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        cursor: pointer;
+        &:hover {
+          background: red;
+          border: none;
+          color: white;
+        }
+        span {
+          font-size: 40px;
+        }
+        h4 {
+          font-weight: 500;
+        }
+      }
+    }
+    hr {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .categories {
+    .content {
+      .categoryBlocks {
+        .block {
+          width: 150px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 920px) {
+  .categories {
+    .content {
+      .categoryBlocks {
+        .block {
+          width: 120px;
+          height: 120px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .categories {
+    .content {
+      .categoryBlocks {
+        .block {
+          width: 100px;
+          height: 100px;
+          span {
+            font-size: 30px;
+          }
+          h4 {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 431px) {
+  .categories {
+    .content {
+      gap: 20px;
+      .mainText {
+        .bg {
+          width: 15px;
+          height: 30px;
+        }
+        h3 {
+          font-size: 15px;
+        }
+      }
+      h1 {
+        font-size: 20px;
+      }
+      .categoryBlocks {
+        flex-wrap: wrap;
+        gap: 20px;
+        .block {
+          width: 100px;
+          height: 100px;
+          span {
+            font-size: 30px;
+          }
+          h4 {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 361px) {
+  .categories {
+    padding-top: 30px;
+    .content {
+      gap: 10px;
+      .mainText {
+        .bg {
+          width: 15px;
+          height: 30px;
+        }
+        h3 {
+          font-size: 12px;
+        }
+      }
+      h1 {
+        font-size: 20px;
+      }
+      hr {
+        margin-top: 10px;
+      }
+      .categoryBlocks {
+        flex-wrap: wrap;
+        justify-content: start;
+        gap: 20px;
+        .block {
+          width: 80px;
+          height: 80px;
+          span {
+            font-size: 20px;
+          }
+          h4 {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}

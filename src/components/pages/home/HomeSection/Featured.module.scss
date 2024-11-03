@@ -1,0 +1,334 @@
+.featured {
+  padding-top: 50px;
+  margin-bottom: 50px;
+  .content {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 40px;
+    .mainText {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      .bg {
+        width: 20px;
+        height: 40px;
+        background: red;
+        border-radius: 5px;
+      }
+      h3 {
+        color: red;
+      }
+    }
+    h1 {
+      font-size: 30px;
+    }
+    .featuredBlocks {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      width: 100%;
+      .text {
+        position: absolute;
+        left: 20px;
+        bottom: 20px;
+        color: white;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        gap: 10px;
+        h1 {
+          font-size: 25px;
+          font-weight: 500;
+        }
+        p {
+          font-size: 12px;
+          width: 200px;
+        }
+        span {
+          font-size: 15px;
+          font-weight: 500;
+          border-bottom: 1px solid white;
+          cursor: pointer;
+        }
+      }
+      .bigBlock {
+        background: #000;
+        width: 50%;
+        height: 590px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        img {
+          width: 90%;
+          height: 70%;
+          object-fit: cover;
+        }
+      }
+      .nextBlocks {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        .top {
+          background: #000;
+          width: 100%;
+          height: 285px;
+          display: flex;
+          align-items: center;
+          justify-content: end;
+          position: relative;
+          img {
+            width: 70%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .bottom {
+          width: 100%;
+          height: 285px;
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          .block {
+            width: 48%;
+            height: 100%;
+            background: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            img {
+              width: 80%;
+              height: 70%;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+    }
+  }
+  .details {
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 100px;
+    .block {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 10px;
+      .icon {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: rgba(128, 128, 128, 0.316);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+          width: 50px;
+          height: 50px;
+          font-size: 30px;
+          border-radius: 50%;
+          background: #000;
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      h2 {
+        font-size: 15px;
+      }
+      h6 {
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+}
+@media (max-width: 920px) {
+  .featured {
+    .content {
+      .featuredBlocks {
+        .bigBlock {
+          height: 500px;
+        }
+        .nextBlocks {
+          height: 500px;
+        }
+      }
+    }
+    .details {
+      gap: 50px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .featured {
+    .content {
+      .featuredBlocks {
+        .bigBlock {
+          height: 450px;
+        }
+        .nextBlocks {
+          height: 450px;
+        }
+      }
+    }
+    .details {
+      padding-top: 50px;
+      gap: 50px;
+    }
+  }
+}
+@media (max-width: 431px) {
+  .featured {
+    .content {
+      gap: 20px;
+      .mainText {
+        .bg {
+          width: 15px;
+          height: 30px;
+        }
+        h3 {
+          font-size: 15px;
+        }
+      }
+      h1 {
+        font-size: 20px;
+      }
+      .featuredBlocks {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        .text {
+          gap: 5px;
+          h1 {
+            font-size: 20px;
+          }
+          p {
+            font-size: 10px;
+          }
+          span {
+            font-size: 13px;
+          }
+        }
+        .bigBlock {
+          width: 100%;
+          height: 350px;
+        }
+        .nextBlocks {
+          height: 400px;
+          width: 100%;
+          gap: 10px;
+          .top {
+            width: 100%;
+          }
+          .bottom {
+            gap: 10px;
+          }
+        }
+      }
+    }
+    .details {
+      padding-top: 50px;
+      gap: 10px;
+      flex-wrap: wrap;
+      .block {
+        .icon {
+          width: 50px;
+          height: 50px;
+          a {
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+          }
+        }
+        h2 {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 361px) {
+  .featured {
+    padding-top: 30px;
+    .content {
+      gap: 10px;
+      .mainText {
+        .bg {
+          width: 15px;
+          height: 30px;
+        }
+        h3 {
+          font-size: 12px;
+        }
+      }
+      h1 {
+        font-size: 20px;
+      }
+      .featuredBlocks {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        .text {
+          gap: 5px;
+          h1 {
+            font-size: 15px;
+          }
+          p {
+            font-size: 10px;
+          }
+          span {
+            font-size: 10px;
+          }
+        }
+        .bigBlock {
+          width: 100%;
+          height: 300px;
+        }
+        .nextBlocks {
+          height: 350px;
+          width: 100%;
+          gap: 10px;
+          .top {
+            width: 100%;
+          }
+          .bottom {
+            gap: 10px;
+          }
+        }
+      }
+    }
+    .details {
+      padding-top: 50px;
+      gap: 10px;
+      flex-wrap: wrap;
+      .block {
+        .icon {
+          width: 50px;
+          height: 50px;
+          a {
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+          }
+        }
+        h2 {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}

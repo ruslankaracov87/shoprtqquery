@@ -1,0 +1,144 @@
+.todays {
+  padding-top: 100px;
+  .content {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 40px;
+    .mainText {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      .bg {
+        width: 20px;
+        height: 40px;
+        background: red;
+        border-radius: 5px;
+      }
+      h3 {
+        color: red;
+      }
+    }
+    .saleTime {
+      display: flex;
+      align-items: center;
+      gap: 100px;
+      h1 {
+        font-size: 30px;
+      }
+      .time {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .timeBlock {
+          display: flex;
+          align-items: start;
+          flex-direction: column;
+          h4 {
+            font-size: 12px;
+          }
+          h2 {
+            font-size: 30px;
+          }
+        }
+        span {
+          font-size: 30px;
+          color: red;
+        }
+      }
+    }
+    .saleProducts {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      width: 100%;
+      overflow-x: scroll;
+      scrollbar-width: none;
+    }
+    hr {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+}
+@media (max-width: 920px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 431px) {
+  .todays {
+    padding-top: 70px;
+    .content {
+      gap: 20px;
+      .mainText {
+        .bg {
+          width: 15px;
+          height: 30px;
+        }
+        h3 {
+          font-size: 15px;
+        }
+      }
+      .saleTime {
+        gap: 40px;
+        h1 {
+          font-size: 20px;
+        }
+        .time {
+          .timeBlock {
+            h4 {
+              font-size: 8px;
+            }
+            h2 {
+              font-size: 15px;
+            }
+          }
+          span {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 361px) {
+  .todays {
+    padding-top: 30px;
+    .content {
+      gap: 10px;
+      .mainText {
+        .bg {
+          width: 15px;
+          height: 30px;
+        }
+        h3 {
+          font-size: 12px;
+        }
+      }
+      .saleTime {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        gap: 10px;
+        h1 {
+          font-size: 20px;
+        }
+        .time {
+          .timeBlock {
+            h4 {
+              font-size: 8px;
+            }
+            h2 {
+              font-size: 15px;
+            }
+          }
+          span {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}

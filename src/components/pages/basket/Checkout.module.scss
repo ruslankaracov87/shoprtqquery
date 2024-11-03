@@ -1,0 +1,382 @@
+.checkout {
+  margin-bottom: 50px;
+  .content {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 40px;
+    .main {
+      padding-top: 20px;
+      h5 {
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        color: gray;
+        font-weight: 500;
+        span {
+          color: black;
+        }
+      }
+    }
+    .checkoutDetails {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      .billing {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        gap: 40px;
+        width: 50%;
+        h1 {
+          font-size: 30px;
+          font-weight: 500;
+        }
+        form {
+          display: flex;
+          align-items: start;
+          flex-direction: column;
+          width: 100%;
+          gap: 20px;
+          .input {
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            gap: 5px;
+            width: 70%;
+            h6 {
+              font-size: 12px;
+              font-weight: 500;
+              color: gray;
+              span {
+                color: red;
+              }
+            }
+            input {
+              width: 100%;
+              height: 35px;
+              background: rgba(128, 128, 128, 0.161);
+              border: none;
+              border-radius: 2px;
+              padding-inline: 10px;
+            }
+          }
+          .check {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            a {
+              width: 20px;
+              height: 20px;
+              color: red;
+            }
+            h5 {
+              font-size: 15px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+      .cart {
+        width: 40%;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        .products {
+          display: flex;
+          align-items: start;
+          flex-direction: column;
+          gap: 20px;
+          overflow-y: scroll;
+          scrollbar-width: none;
+          width: 70%;
+          height: 150px;
+          .product {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            .imgName {
+              display: flex;
+              align-items: center;
+              gap: 5px;
+              img {
+                width: 40px;
+                height: 40px;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+        h4 {
+          font-weight: 500;
+          font-size: 15px;
+        }
+        .total {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 70%;
+        }
+        hr {
+          width: 70%;
+        }
+        .bank {
+          display: flex;
+          align-items: start;
+          justify-content: space-between;
+          width: 70%;
+          .clickCheck {
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            gap: 10px;
+            .click {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+            }
+          }
+          .bankCart {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            img {
+              width: 30px;
+              height: 10px;
+              object-fit: cover;
+            }
+          }
+        }
+        .input {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          input {
+            width: 250px;
+            height: 35px;
+            border: 1px solid black;
+            border-radius: 2px;
+            padding-left: 10px;
+          }
+          button {
+            width: 150px;
+            height: 35px;
+            background: red;
+            border: none;
+            border-radius: 2px;
+            color: white;
+          }
+        }
+        button {
+          width: 150px;
+          height: 35px;
+          color: white;
+          background: red;
+          border: none;
+          border-radius: 2px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .checkout {
+    .content {
+      .checkoutDetails {
+        .cart {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 920px) {
+  .checkout {
+    .content {
+      .billing {
+        form {
+          .check {
+            h5 {
+              width: 70%;
+            }
+          }
+        }
+      }
+      .checkoutDetails {
+        .cart {
+          width: 50%;
+          .input {
+            input {
+              width: 180px;
+            }
+            button {
+              width: 100px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .checkout {
+    .content {
+      .billing {
+        form {
+          .check {
+            h5 {
+              width: 70%;
+            }
+          }
+        }
+      }
+      .checkoutDetails {
+        .cart {
+          width: 50%;
+          .input {
+            input {
+              width: 180px;
+            }
+            button {
+              width: 100px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 431px) {
+  .checkout {
+    .content {
+      .main {
+        h5 {
+          font-size: 12px;
+        }
+      }
+      h1 {
+        font-size: 20px;
+      }
+      .checkoutDetails {
+        flex-direction: column;
+        gap: 30px;
+        .billing {
+          width: 100%;
+          form {
+            .input {
+              h6 {
+                font-size: 10px;
+              }
+              input {
+                height: 30px;
+                font-size: 12px;
+              }
+            }
+            .check {
+              a {
+                width: 15px;
+                height: 15px;
+              }
+              h5 {
+                width: 70%;
+                font-size: 12px;
+              }
+            }
+          }
+        }
+        .cart {
+          width: 100%;
+          h4 {
+            font-size: 12px;
+          }
+          .input {
+            input {
+              width: 150px;
+              height: 30px;
+              font-size: 12px;
+            }
+            button {
+              width: 100px;
+              height: 30px;
+            }
+          }
+          button {
+            height: 30px;
+            width: 90px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 361px) {
+  .checkout {
+    .content {
+      .main {
+        h5 {
+          font-size: 10px;
+        }
+      }
+      h1 {
+        font-size: 20px;
+      }
+      .checkoutDetails {
+        flex-direction: column;
+        gap: 30px;
+        .billing {
+          width: 100%;
+          form {
+            .input {
+              width: 80%;
+              h6 {
+                font-size: 10px;
+              }
+              input {
+                height: 25px;
+                font-size: 10px;
+              }
+            }
+            .check {
+              a {
+                width: 10px;
+                height: 10px;
+              }
+              h5 {
+                width: 70%;
+                font-size: 10px;
+              }
+            }
+          }
+        }
+        .cart {
+          width: 100%;
+          h4 {
+            font-size: 10px;
+          }
+          .input {
+            input {
+              width: 150px;
+              height: 25px;
+              font-size: 10px;
+            }
+            button {
+              width: 100px;
+              height: 25px;
+              font-size: 10px;
+            }
+          }
+          button {
+            height: 25px;
+            width: 90px;
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}
